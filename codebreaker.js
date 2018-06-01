@@ -31,6 +31,7 @@ class CodeBreaker {
     }
 
     this.secret = number;
+    return `Numero ${number} asignado`;
   }
 
   compare(number){

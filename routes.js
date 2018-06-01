@@ -8,13 +8,13 @@ const instanceCodeBreaker = new codebreaker("1234");
 api.get('/codebreaker/:num',function (req, res) {
     let num = req.params.num;
     let resultado = instanceCodeBreaker.compare(num);
-    res.status(200).send({ resultado });
+    res.status(200).send({ result });
 });
 
 api.get('/codebreaker/secret/:num',function (req, res) {
     let num = req.params.num;
     let resultado = instanceCodeBreaker.setSecret(num);
-    res.status(200).send({ resultado });
+    res.status(200).send({ result });
 });
 
 
